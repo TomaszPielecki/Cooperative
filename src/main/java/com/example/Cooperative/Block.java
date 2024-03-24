@@ -20,4 +20,15 @@ public class Block {
     private String miasto;
     private String ulica;
     private Cooperative cooperative;
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Block{");
+        sb.append("idBlock='").append(idBlock).append('\'');
+        sb.append(", miasto='").append(miasto).append('\'');
+        sb.append(", ulica='").append(ulica).append('\'');
+        sb.append(", cooperative=").append(cooperative);
+        sb.append('}');
+        return sb.toString();
+    }
 }

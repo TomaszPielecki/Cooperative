@@ -24,4 +24,15 @@ public class Finanse {
     private String opis;
     private BigDecimal kwota;
 
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Finanse{");
+        sb.append("idFinansu=").append(idFinansu);
+        sb.append(", typTransakcji='").append(typTransakcji).append('\'');
+        sb.append(", data=").append(data);
+        sb.append(", opis='").append(opis).append('\'');
+        sb.append(", kwota=").append(kwota);
+        sb.append('}');
+        return sb.toString();
+    }
 }

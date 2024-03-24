@@ -22,5 +22,18 @@ public class Kontakty {
     private String telefon;
     private String email;
     private String typKontaktu;
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Kontakty{");
+        sb.append("idKontaktu=").append(idKontaktu);
+        sb.append(", imie='").append(imie).append('\'');
+        sb.append(", nazwisko='").append(nazwisko).append('\'');
+        sb.append(", telefon='").append(telefon).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", typKontaktu='").append(typKontaktu).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
 

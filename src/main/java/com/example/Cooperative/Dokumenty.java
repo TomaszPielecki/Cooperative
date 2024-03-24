@@ -23,4 +23,23 @@ public class Dokumenty {
     private String opis;
     private Date data;
     private byte[] plik;
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Dokumenty{");
+        sb.append("idDokumentu=").append(idDokumentu);
+        sb.append(", nazwa='").append(nazwa).append('\'');
+        sb.append(", opis='").append(opis).append('\'');
+        sb.append(", data=").append(data);
+        sb.append(", plik=");
+        if (plik == null) sb.append("null");
+        else {
+            sb.append('[');
+            for (int i = 0; i < plik.length; ++i)
+                sb.append(i == 0 ? "" : ", ").append(plik[i]);
+            sb.append(']');
+        }
+        sb.append('}');
+        return sb.toString();
+    }
 }

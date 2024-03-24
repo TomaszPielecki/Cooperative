@@ -23,4 +23,15 @@ public class Czynsz {
     private String idMieszkania;
     private Date data;
     private BigDecimal kwota;
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Czynsz{");
+        sb.append("idCzynszu=").append(idCzynszu);
+        sb.append(", idMieszkania='").append(idMieszkania).append('\'');
+        sb.append(", data=").append(data);
+        sb.append(", kwota=").append(kwota);
+        sb.append('}');
+        return sb.toString();
+    }
 }

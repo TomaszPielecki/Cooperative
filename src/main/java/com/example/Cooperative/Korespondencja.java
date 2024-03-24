@@ -22,4 +22,15 @@ public class Korespondencja {
     private Date data;
     private String rodzaj;
     private String opis;
+
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Korespondencja{");
+        sb.append("idKorespondencji= '").append(idKorespondencji).append('\'');
+        sb.append(", idLokatora=").append(idLokatora).append('\'');
+        sb.append(", data=").append(data).append('\'');
+        sb.append(", rodzaj=").append(rodzaj).append('\'');
+        sb.append(", opis=").append(opis).append('\'');
+        sb.append("}");
+        return sb.toString();
+    }
 }

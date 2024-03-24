@@ -20,4 +20,15 @@ public class DefinicjeRaportow {
     private String nazwa;
     private String opis;
     private String zapytanieSql;
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("DefinicjeRaportow{");
+        sb.append("idDefinicji=").append(idDefinicji);
+        sb.append(", nazwa='").append(nazwa).append('\'');
+        sb.append(", opis='").append(opis).append('\'');
+        sb.append(", zapytanieSql='").append(zapytanieSql).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
